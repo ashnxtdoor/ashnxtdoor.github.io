@@ -1,103 +1,93 @@
-<html>
+<style>
 
-<head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      margin: 0;
-      padding: 0;
-    }
+/* 🖼️ Profile */
+.profile {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.profile:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #38bdf8;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+/* 🌈 Animated Background */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg,
+    #0f172a,
+    #1e293b,
+    #0ea5e9,
+    #2563eb
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
-    h1 {
-      text-align: center;
-      color: #38bdf8;
-    }
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-    .box {
-      background: rgba(255,255,255,0.05);
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
+/* 📦 Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
 
-    a {
-      display: block;
-      margin: 10px 0;
-      padding: 10px;
-      text-decoration: none;
-      color: white;
-      background: #2563eb;
-      border-radius: 8px;
-      text-align: center;
-      transition: 0.3s;
-    }
+/* 💡 Neon Title */
+h1 {
+  text-align: center;
+  color: #38bdf8;
+  text-shadow: 
+    0 0 10px #38bdf8,
+    0 0 20px #0ea5e9,
+    0 0 40px #2563eb;
+}
 
-    a:hover {
-      background: #1d4ed8;
-      transform: scale(1.05);
-    }
-  </style>
-</head>
+/* 🧊 Glass Cards */
+.box {
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  transition: 0.3s;
+}
 
-<body>
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(14,165,233,0.5);
+}
 
-  <div class="container">
+/* 🔥 Neon Buttons */
+a {
+  display: block;
+  margin: 12px 0;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #0ea5e9, #2563eb);
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(14,165,233,0.5);
+}
 
-    <h1>🔥 Ash Wiki</h1>
+a:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px rgba(14,165,233,1);
+}
 
-    <!-- 👤 Personal Info -->
-    <div class="box">
-      <h2>👤 Personal Information</h2>
-
-      <p><b>Name:</b> Ashwin Mukhia</p>
-      <p><b>Date of Birth:</b> 29 March 1996</p>
-      <p><b>School:</b> Scottish Universities Mission Institution</p>
-      <p><b>High School Completed:</b> 2014</p>
-      <p><b>Hobbies:</b> Gaming, exploring online earning, learning digital skills</p>
-      <p><b>Personality:</b> Introverted, observant, self-learner</p>
-    </div>
-
-    <!-- 👤 About Me -->
-    <div class="box">
-      <h2>👤 About Me</h2>
-      <p><b>Ashwin Mukhia</b> (born 29 March 1996) is an aspiring content creator and beginner web developer from India.</p>
-
-      <p>He completed his schooling at Scottish Universities Mission Institution and finished high school in 2014.</p>
-
-      <p>His hobbies include gaming and exploring new ways to earn money online.</p>
-
-      <p>He is an introverted person who prefers to stay quiet but enjoys self-learning.</p>
-    </div>
-
-    <!-- 🔗 Links -->
-    <div class="box">
-      <h2>🔗 My Links</h2>
-
-      <a href="https://www.instagram.com/asshnxtdoor_" target="_blank">
-        📸 Instagram
-      </a>
-
-      <a href="https://wa.me/919647233726?text=Hey%20I%20saw%20your%20website" target="_blank">
-        💬 WhatsApp
-      </a>
-
-      <a href="#">
-        🎮 MLBB Lore Site (Coming Soon)
-      </a>
-
-    </div>
-
-  </div>
-
-</body>
-
-</html>
+</style>
